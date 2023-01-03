@@ -21,7 +21,7 @@ frame_height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
 
 # Initialize output array to store features of each segment
 segment_count = frame_count // 32  # Number of segments
-features = np.zeros((segment_count, 2*1024))
+features = np.zeros((segment_count, 1024))
 
 # Process video frame by frame
 segment_idx = 0
